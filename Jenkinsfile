@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Run Deploy artifact downstream') {
             steps {
-                build job: 'BT-Demos/SCM_Test/test2', 
+                build job: 'build_deploy_no_scm/test2', 
                     parameters: [
                         string(name: 'DEPLOY_ARTIFACT_ID', value: env.ARTIFACT_ID)
                     ]
