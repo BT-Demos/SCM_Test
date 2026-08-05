@@ -15,7 +15,7 @@ pipeline {
             steps {
                 registerDeployedArtifactMetadata(
                     artifactId: params.DEPLOY_ARTIFACT_ID,
-                    targetEnvironment: "dora-env"
+                    targetEnvironment: "pre-prod"
                 )
             }
         }
